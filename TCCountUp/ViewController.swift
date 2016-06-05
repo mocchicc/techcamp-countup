@@ -22,12 +22,13 @@ class ViewController: UIViewController {
         shapedIntoCircleButton(clearButton)
         shapedIntoCircleButton(minusButton)
         
-        func shapedIntoCircleButton(button: UIButton) {
+    }
+    
+    func shapedIntoCircleButton(button: UIButton) {
         numberLabel.layer.cornerRadius = numberLabel.frame.width / 2
         numberLabel.layer.masksToBounds = true
         }
         
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
