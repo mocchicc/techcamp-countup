@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
     
+    var number = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,16 +31,22 @@ class ViewController: UIViewController {
     
     @IBAction func tapPlusButton(sender: UIButton) {
         print("ボタンがタップされました")
+        number = number + 1
+        numberLabel.text = String(number)
     }
     
     
     @IBAction func tapMinusButton(sender: UIButton) {
         print("ボタンがタップされました")
+        number = number - 1
+        numberLabel.text = String(number)
     }
     
     
     @IBAction func tapClearButton(sender: UIButton) {
         print("ボタンがタップされました")
+        number = 0
+        numberLabel.text = String(number)
     }
     
     
