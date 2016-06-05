@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        numberLabel.layer.cornerRadius = numberLabel.frame.width / 2
+        numberLabel.layer.masksToBounds = true
         shapedIntoCircleButton(plusButton)
         shapedIntoCircleButton(clearButton)
         shapedIntoCircleButton(minusButton)
@@ -25,10 +27,10 @@ class ViewController: UIViewController {
     }
     
     func shapedIntoCircleButton(button: UIButton) {
-        numberLabel.layer.cornerRadius = numberLabel.frame.width / 2
-        numberLabel.layer.masksToBounds = true
+        button.layer.cornerRadius = button.frame.width / 2
+        button.layer.masksToBounds = true
         }
-        
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
