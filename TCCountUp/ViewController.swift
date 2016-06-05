@@ -17,7 +17,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        shapedIntoCircleButton(plusButton)
+        shapedIntoCircleButton(clearButton)
+        shapedIntoCircleButton(minusButton)
+        
+        func shapedIntoCircleButton(button: UIButton) {
+        numberLabel.layer.cornerRadius = numberLabel.frame.width / 2
+        numberLabel.layer.masksToBounds = true
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
