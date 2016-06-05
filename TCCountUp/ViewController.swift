@@ -26,6 +26,22 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func tapPlusButton(sender: UIButton) {
+        print("ボタンがタップされました")
+    }
+    
+    
+    @IBAction func tapMinusButton(sender: UIButton) {
+        print("ボタンがタップされました")
+    }
+    
+    
+    @IBAction func tapClearButton(sender: UIButton) {
+        print("ボタンがタップされました")
+    }
+    
+    
     func shapedIntoCircleButton(button: UIButton) {
         button.layer.cornerRadius = button.frame.width / 2
         button.layer.masksToBounds = true

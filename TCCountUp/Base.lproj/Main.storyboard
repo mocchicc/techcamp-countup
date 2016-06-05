@@ -42,6 +42,9 @@
                                 <state key="normal" title="−">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapMinusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vv6-UY-bYA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pe-2p-elZ">
                                 <rect key="frame" x="235" y="490" width="80" height="80"/>
@@ -58,6 +61,9 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapPlusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcE-jE-J4g"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMN-0P-cR7">
                                 <rect key="frame" x="147" y="490" width="80" height="80"/>
@@ -70,6 +76,9 @@
                                 <state key="normal" title="C">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapClearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2bK-2W-3pe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.24869785874583644" green="0.56115712548973029" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
